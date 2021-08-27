@@ -87,6 +87,7 @@ nav li a{
   width: 730px;
   height: 349px;
   background-color: rgba(247, 248, 250, 0.8);
+  backdrop-filter: blur(24px); /* Não é aceito no firefox */
   border-radius: 2px;
   display: flex;
   flex-flow: column;
