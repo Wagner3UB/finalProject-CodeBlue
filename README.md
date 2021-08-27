@@ -5,12 +5,20 @@
 > EN - Final Project - Wed Developer course - CodeBlue .
 > - E-Commerce Full-responsive Layout
 > - JavaScript Vanilla + jQuery Library
-> - CSS: @media queryes | variables | keyframes
+> - CSS: @media queries | variables | keyframes
 > - jQuery Validation 
 >
 > PT - Projeto Final - Curso Web Developer - CodeBlue
+> - Layout de E-Commerce Full-responsivo
+> - JavaScript Vanilla + biblioteca jQuery
+> - @media queries | variables | keyframes
+> - jQuery Validation 
 >
-> IT - Website one page con menu estilo widget, effetto parallax sull'immagine e comportamento nello scroll utilizando jQuery.
+> IT - Projetto Finale - Corso Web Developer - CodeBlue
+> - Layout de E-Commerce Full-responsivo
+> - JavaScript Vanilla + biblioteca jQuery
+> - @media queries | variables | keyframes
+> - jQuery Validation 
 
 ✔ This code uses:
 
