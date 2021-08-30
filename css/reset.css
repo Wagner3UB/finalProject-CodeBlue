@@ -15,7 +15,7 @@ html, body, div, section, p, h1, h2, h3, h4, h5, h6, ul, ol, hr, li, a, img, str
     font-size: 100%;
     font-weight: inherit;
 }
-a, a:active, a:focus, a:checked{
+a, a:active, a:focus, a:checked a:hover{
     text-decoration: none;
     color: #272727;
 }

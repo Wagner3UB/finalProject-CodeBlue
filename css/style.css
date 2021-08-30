@@ -3,6 +3,7 @@
   --black: #272727;
   --white: #ffffff;
   --dark-1: rgba(94, 110, 137, 1);
+  --w15: 150px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
 *{
@@ -11,7 +12,6 @@
 }
 p,a,span{
   font: 500 16px/28px "Roboto", Helvetica, Arial, sans-serif;
-
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: "Poppins", Helvetica, Arial, sans-serif;
