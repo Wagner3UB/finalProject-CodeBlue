@@ -21,6 +21,15 @@ h1,h2,h3,h4,h5,h6 {
   max-width: 1111px;
   margin: 0 auto;
 }
+.btn{
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 4px;
+  font-size: 21px;
+  line-height: 1.17em;
+  padding: 8px 0;
+}
 
 /* HEADER SECTION */
 header{
@@ -108,14 +117,7 @@ nav li a{
   line-height: 1.42em;
 }
 .top_banner button{
-  cursor: pointer;
   width: 310px;
-  color: var(--white);
-  background-color: var(--green);
-  border-radius: 4px;
-  font-size: 21px;
-  line-height: 1.17em;
-  padding: 8px 0;
   margin-top: 53px;
 }
 
@@ -139,6 +141,10 @@ nav li a{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.prateleira button{
+  width: 173px;
+  margin: 54px auto;
 }
 .produto{
   width: 255px;
@@ -194,6 +200,65 @@ nav li a{
   padding: 10px 26px 16px;
   background-color: var(--white);
 }
+
+/* LEARN MORE */
+.learn-more{
+  background-color: rgba(247, 248, 250, 1);
+  padding: 130px 0;
+}
+.learn-more .container div{
+  width: 50%;
+}
+.learn-more ul{
+  margin-top: 40px;
+}
+.learn-more h2{
+  display: block;
+  width: 350px;
+  font-size: 40px;
+  line-height: 1.44em;
+  letter-spacing: -.9px;
+}
+.learn-more h4{
+  font-size: 16px;
+  line-height: 1.44em;
+  color: var(--green);
+}
+.learn-more ul li{
+  list-style-image: url(../img/Group.png);
+  list-style-position: inside;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  margin-bottom: 10px;
+}
+.learn-more ul li span{
+  font-weight: 500;
+}
+.learn-more .container{
+  position: relative;
+}
+.learn-more figure{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* .learn-more figure::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 350px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);  
+  z-index: 1;
+  box-shadow: 0px 4px 94px rgba(123, 123, 123, 0.35);
+} */
+.learn-more button{
+  width: 194px;
+  margin-top: 68px;
+}
+
 
 
 
@@ -260,5 +325,27 @@ nav li a{
   .top_banner button{
     margin-top: 35px;
     margin-bottom: 43px;
+  }
+
+  /* PRODUCTS */
+  .m-hide{
+    display: none;
+  }
+  .see_more.active{
+    display: none;
+  }
+  .produto{
+    width: 100%;
+  }
+  .produto .img_produto{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  .produto div {
+    padding: 7px 26px 10px;
+  }
+  .produto h3, .produto p{
+    line-height: 1.1em;
   }
 }
