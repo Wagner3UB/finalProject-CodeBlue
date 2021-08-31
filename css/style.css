@@ -3,7 +3,6 @@
   --black: #272727;
   --white: #ffffff;
   --dark-1: rgba(94, 110, 137, 1);
-  --w15: 150px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
 *{
@@ -13,7 +12,7 @@
 p,a,span{
   font: 500 16px/28px "Roboto", Helvetica, Arial, sans-serif;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, blockquote {
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
@@ -248,6 +247,45 @@ nav li a{
   margin-top: 68px;
 }
 
+/* TESTIMONIALS */
+.testimonials{
+  overflow: hidden;
+  background-color: rgba(86, 178, 128, 0.1);
+}
+.people-stars-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 89px;
+}
+.people-stars-row .people-stars{
+  background-color: var(--white);
+  width: 350px;
+  box-shadow: 0px 4px 24px rgba(139, 167, 178, 0.16);
+  border-radius: 6px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 33px;
+}
+.people-stars blockquote{
+  display: block;
+  font-size: 22px;
+  line-height: 28.8px;
+  font-weight: 500;
+  max-width: 304px;
+  margin-top: 22px;
+}
+.people-stars cite{
+  font-size: 18px;
+  line-height: 20.7px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 6px;
+  margin-bottom: 29px;
+  color: rgba(124, 128, 135, 1);
+}
 
 
 
