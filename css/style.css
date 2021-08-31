@@ -252,7 +252,11 @@ nav li a{
   overflow: hidden;
   background-color: rgba(86, 178, 128, 0.1);
 }
+.people-stars-container{
+  overflow: scroll;
+}
 .people-stars-row{
+  width: 1111px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 89px;
@@ -410,6 +414,32 @@ nav li a{
   .learn-more button{
   margin: 50px auto 40px;
   }
+
+  /*TESTIMONIALS*/
+  .people-stars-row{
+    width: 850px;
+  }
+  .people-stars-row .people-stars{
+    width: 267px;
+    padding-top: 25px;
+  }
+  .people-stars blockquote{
+    font-size: 19px;
+    line-height: 25.39px;
+    margin-top: 16px;
+  }
+  .people-stars cite{
+    font-size: 15.86px;
+    line-height: 28.24px;
+    margin-top: 4px;
+    margin-bottom: 22px;
+  }
+  .people-stars .foto img{
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+  .people-stars .stars{
+    margin-top: 10px;
+  }
 }
-
-
