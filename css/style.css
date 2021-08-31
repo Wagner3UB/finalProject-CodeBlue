@@ -301,6 +301,7 @@ footer{
   background-color: var(--black);
   padding-top: 60px;
   position: relative;
+  background-image: url(../img/codeblue32.png);
 }
 footer article.container{
   border-top: 1px solid var(--white);
@@ -309,6 +310,12 @@ footer article.container{
 }
 footer figure{
   width: 50%;
+}
+footer .code{
+  margin-top: 30px;
+  width: 30%;
+  opacity: .1;
+  filter: grayscale(1);
 }
 footer figcaption{
   font-size: 16px;
@@ -335,7 +342,6 @@ footer figcaption{
 .menu-footer ul li:first-child{
   color: var(--green);
   font-family: "Poppins", Helvetica, Arial, sans-serif;
-  font
 }
 .menu-footer a{
   color: var(--white);
@@ -359,6 +365,9 @@ footer figcaption{
 }
 .bottonbar .container h4:last-child{
   text-align: right;
+}
+.bottonbar .container h4 a:hover{
+  color:var(--green);
 }
 
 
@@ -520,5 +529,45 @@ footer figcaption{
   /* POPULAR */
   .popular {
     display: none;
+  }
+
+  /* FOOTER */
+  footer article.container{
+    flex-flow: column;
+  }
+  footer figure{
+    width: 100%;
+  }
+  footer figure img{
+    display: block;
+    width: 141px;
+  }
+  footer figcaption{
+    width: 100%;
+  }
+  .menu-footer{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 122px;
+  }
+  .menu-footer ul{
+    width: 50%;
+  }
+  .menu-footer ul:nth-of-type(2){
+    order: 1;
+  }
+  .menu-footer ul li{
+    margin-bottom: 15px;
+  }
+  .menu-footer ul li:first-of-type{
+    margin-bottom: 25px;
+  }
+  .menu-footer ul li:last-of-type{
+    margin-bottom: 40px;
+  }
+  .bottonbar .container{
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
