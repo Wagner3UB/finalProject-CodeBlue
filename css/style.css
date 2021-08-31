@@ -199,6 +199,9 @@ nav li a{
   padding: 10px 26px 16px;
   background-color: var(--white);
 }
+.products-mobile{
+  display: none;
+} 
 
 /* LEARN MORE */
 .learn-more{
@@ -251,9 +254,6 @@ nav li a{
 .testimonials{
   overflow: hidden;
   background-color: rgba(86, 178, 128, 0.1);
-}
-.people-stars-container{
-  overflow: scroll;
 }
 .people-stars-row{
   width: 1111px;
@@ -379,6 +379,9 @@ nav li a{
   .produto h3, .produto p{
     line-height: 1.1em;
   }
+  .products-mobile{
+    display: block;
+  } 
 
   /* Learn More */
   .learn-more{
@@ -418,6 +421,9 @@ nav li a{
   /*TESTIMONIALS*/
   .people-stars-row{
     width: 850px;
+  }
+  .people-stars-container{
+    overflow: scroll;
   }
   .people-stars-row .people-stars{
     width: 267px;
