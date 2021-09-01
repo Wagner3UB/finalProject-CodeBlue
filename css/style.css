@@ -29,6 +29,9 @@ h1,h2,h3,h4,h5,h6, blockquote, figcaption {
   line-height: 1.17em;
   padding: 8px 0;
 }
+.clear{
+  clear: both;
+}
 
 /* HEADER SECTION */
 header{
@@ -110,6 +113,7 @@ nav li:first-child a::before{
 .top_banner .box{
   width: 730px;
   height: 349px;
+  margin-top: 84px;
   background-color: rgba(247, 248, 250, 0.8);
   backdrop-filter: blur(24px); /* Não é aceito no firefox */
   border-radius: 2px;
@@ -386,6 +390,44 @@ footer figcaption{
   color:var(--green);
 }
 
+/* PAGINA PRODUTO */
+main.product article.container{
+  display: flex;
+  margin-top: 130px;
+}
+main.product figure, .add-to-cart{
+  width: 50%;
+}
+.add-to-cart input{
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+}
+.left-column{
+  width: 190px;
+  float: left;
+}
+.right-column{
+  width: 350px;
+  float: left;
+}
+.right-column div{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.add-to-cart button{
+  width: 350px;
+  margin-left: 190px;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
 
 @media screen and (max-width: 376px){
   /* HEADER SECTION */
@@ -425,7 +467,7 @@ footer figcaption{
     align-items: flex-start;
     position: absolute;
     bottom: -30px;
-    left: -14px;
+    left: -15px;
     opacity: 0;
     width: 375px;
     background-color: var(--white);
@@ -452,6 +494,9 @@ footer figcaption{
 
 /* MAIN SECTION MOBILE*/
 /* Top Banner */
+  .top_banner{
+    background-image: url(../img/bg-image.png);
+  }
   .top_banner .box{
     height: auto;
   }
@@ -467,6 +512,9 @@ footer figcaption{
   }
 
   /* PRODUCTS */
+  .prateleira a {
+    width: 100%;
+  }
   .m-hide{
     display: none;
   }
