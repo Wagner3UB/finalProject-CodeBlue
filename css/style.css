@@ -37,6 +37,7 @@ header{
   top: 0;
   z-index: 10;
   background: var(--white);
+  border-bottom: .5px solid rgba(86, 178, 128, 0.2);
 }
 .topbar .material-icons-outlined{
   font-size: 25px;
@@ -74,10 +75,25 @@ nav li{
   justify-content: center;
   align-items: center;
 }
+nav li:first-child a::before{
+  content: "⌄";
+  position: absolute;
+  left: 500px;
+  top: 20px;
+  font-size: 20px;
+}
 nav li a{
   display: block;
   width: 100%;
   text-align: center;
+  position: relative;
+}
+nav li:first-child a::before{
+  content: "⌄";
+  position: absolute;
+  left: 110px;
+  top: -8px;
+  font-size: 20px;
 }
 
 /* MAIN SECTION */
@@ -389,6 +405,7 @@ footer figcaption{
   nav{
     order: 1;
     position: relative;
+    z-index: 3;
   }
   .menu-hamburger{
     display: flex;
@@ -405,15 +422,28 @@ footer figcaption{
   }
   nav ul{
     flex-flow: column;
+    align-items: flex-start;
     position: absolute;
     bottom: -30px;
     left: -14px;
     opacity: 0;
     width: 375px;
     background-color: var(--white);
+    padding-left: 63px;
+    z-index: 1;
+  }
+  nav li:first-child a::before{
+    left: -25px;
+    top: -7px;
+  }
+  nav ul a{
+    text-align: left;
+    font-size: 24px;
+    line-height: 28.13px;
+    margin-bottom: 20px;
   }
   nav ul.active{
-    bottom: -112px;
+    bottom: -175px;
     opacity: 1;
   }
   .topbar>div{
