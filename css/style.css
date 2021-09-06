@@ -29,6 +29,9 @@ h1,h2,h3,h4,h5,h6, blockquote, figcaption {
   line-height: 1.17em;
   padding: 8px 0;
 }
+.mobile_only{
+  display: none;
+}
 .clear{
   clear: both;
 }
@@ -399,10 +402,10 @@ main.product article.container{
   margin-top: 130px;
 }
 main.product figure, .add-to-cart{
-  width: 49%;
+  width: 48.75%;
 }
 main.product figure{
-  margin-right: 2%;
+  margin-right: 2.5%;
 }
 
 main.product figure img{
@@ -411,7 +414,7 @@ main.product figure img{
 main.product figure img:hover{
   filter: saturate(200%) contrast(110%);;
 }
-.add-to-cart h2, .add-to-cart h3{
+.add-to-cart h2, .add-to-cart h3, h2.mobile_only{
   font-size: 26px;
   line-height: 57.6px;
   letter-spacing: -.9px;
@@ -452,6 +455,17 @@ main.product figure h3{
   height: 30px;
   border: 1px solid var(--green);
 }
+.left-column .counter p:first-child, .left-column .counter p:last-child{
+  color: var(--green);
+  cursor: pointer;
+}
+p.alert-negative, p.alert-out{
+  display:none;
+  font-size: 12px;
+  color: #d00;
+  line-height: 14px;
+  margin-top: 5px;
+}
 .right-column{
   width: 350px;
   float: left;
@@ -461,9 +475,12 @@ main.product figure h3{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  border: 1px solid var(--green);
   border-radius: 4px;
   padding: 20px 10px 20px 20px ;
+  border: 1px solid rgb(161, 161, 161, 0);
+}
+.right-column div.active{
+  border: 1px solid rgb(161, 161, 161);
 }
 .right-column div p, .right-column div p a{
   font: 400 14px/15.6px "Helvetica", Arial, sans-serif;
@@ -520,6 +537,9 @@ main.product figure h3{
 
 
 @media screen and (max-width: 376px){
+  .mobile_only {
+    display: block;
+  }
   /* HEADER SECTION */
   .container{
     margin: 0 15px;
@@ -737,5 +757,34 @@ main.product figure h3{
   .bottonbar .container{
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+
+  /* PÁGINA PRODUTO*/
+  .add-to-cart h2{
+    display: none;
+  }
+  main.product article.container{
+    flex-flow: column;
+  }
+  main.product figure, .add-to-cart{
+    width: 100%;
+  }
+  main.product figcaption, main.product figure h3{
+    display: none;
+  }
+  .left-column {
+    width: 100%;
+    display: flex;
+  }
+  .left-column h3{
+    width: 50%;
+  }
+  .add-to-cart button{
+    width: 100%;
+    margin-top: 67px;
+    margin-left: unset;
+    font-size: 20px;
+    line-height: 23px;
   }
 }
