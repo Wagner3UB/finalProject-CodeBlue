@@ -13,12 +13,12 @@
   <title>Spiced Mint Candle</title>
 </head>
 <body>
-  <main class="p-datails">
+  <main class="p-details">
     <article class="container">
       <article class="personal-info">
-        <header>
+        <div>
           <h1><a href="/"><img src="img/logo.png" alt="Brand Logo"></a></h1>
-        </header>
+        </div>
         <main>
           <ul class="steps">
             <li>Cart</li>
@@ -31,45 +31,53 @@
           </ul>
           <form action="" method="post">
             <section class="contact">
-              <h2>Contact</h2>
-              <p>So you have an account? <a href="">Login</a></p>
+              <div>
+                <h2>Contact</h2>
+                <p>So you have an account? <a href="">Login</a></p>
+              </div>
               <input type="text" placeholder="Email or mobile phone number">
               <input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Add me to Candleaf newsletter for a 10% discount</label>
             </section>
             <section class="shipping-address">
+              <h2>Shipping Address</h2>
               <input type="text" placeholder="Name" name="name" id="name" required>
               <input type="text" placeholder="Second Name" name="surname" id="surname" required>
               <input type="text" placeholder="Address and number" name="address" id="address" required>
               <input type="text" placeholder="Shipping note (optional)">
               <input type="text" placeholder="City" name="city" id="city">
               <input type="number" placeholder="Postal Code" name="postal-code" id="postal-code">
-              <select name="province" id="province">
-                <option>Province</option>
-                <option value="1">Province 1</option>
-                <option value="2">Province 2</option>
-                <option value="3">Province 3</option>
-                <option value="4">Province 4</option>
-                <option value="5">Province 5</option>
-                <option value="6">Province 6</option>
-              </select>
-              <select name="country" id="country">
-                <option value="it">Italy</option>
-                <option value="pt">Portugal</option>
-                <option value="br">Brazil</option>
-                <option value="uk">United Kingdom</option>
-                <option value="fr">France</option>
-                <option value="es">Spain</option>
-                <option value="ch">China</option>
-                <option value="jp">Japan</option>
-              </select>
-              <input type="checkbox" name="save-info" id="save-info"><label for="save-info">Save this informations for a future fast checkout</label>
+              <div class="box-province">
+                <span>Province</span>
+                <select name="province" id="province">
+                  <option>Province</option>
+                  <option value="1">Province 1</option>
+                  <option value="2">Province 2</option>
+                  <option value="3">Province 3</option>
+                  <option value="4">Province 4</option>
+                  <option value="5">Province 5</option>
+                  <option value="6">Province 6</option>
+                </select>
+              </div>
+              <div class="box-country">
+                <span>Country/Region</span>
+                <select name="country" id="country">
+                  <option value="it">Italy</option>
+                  <option value="pt">Portugal</option>
+                  <option value="br">Brazil</option>
+                  <option value="uk">United Kingdom</option>
+                  <option value="fr">France</option>
+                  <option value="es">Spain</option>
+                  <option value="ch">China</option>
+                  <option value="jp">Japan</option>
+                </select>
+              </div>
             </section>
+            <input type="checkbox" name="save-info" id="save-info"><label for="save-info">Save this informations for a future fast checkout</label>
             <section class="footer-datails">
-              <a href="/cart.html">Back to cart</a>
+              <p><a href="/cart.html">Back to cart</a></p>
               <input type="submit" value="Go to shipping" class="btn">
-
             </section>
-          </form>
+          </form>          
         </main>
 
       </article>

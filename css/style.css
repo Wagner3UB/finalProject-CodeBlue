@@ -463,9 +463,6 @@ main.product figure h3{
   color: var(--green);
   cursor: pointer;
 }
-.left-column .counter p:nth-of-type(2){
-  font-size: ;
-}
 p.alert-negative, p.alert-out{
   display:none;
   font-size: 12px;
@@ -473,11 +470,11 @@ p.alert-negative, p.alert-out{
   line-height: 14px;
   margin-top: 5px;
 }
-.right-column{
+main.product .right-column{
   width: 350px;
   float: left;
 }
-.right-column div{
+main.product .right-column div{
   margin-top: 15px;
   display: flex;
   align-items: center;
@@ -486,24 +483,24 @@ p.alert-negative, p.alert-out{
   padding: 20px 10px 20px 20px ;
   border: 1px solid rgb(161, 161, 161, 0);
 }
-.right-column div.active{
+main.product .right-column div.active{
   border: 1px solid rgb(161, 161, 161);
 }
-.right-column div p, .right-column div p a{
+main.product .right-column div p, main.product .right-column div p a{
   font: 400 14px/15.6px "Helvetica", Arial, sans-serif;
   color: #818181;
   margin-top: 10px;
 }
-.right-column div p a{
+main.product .right-column div p a{
   color: var(--green);
 }
-.right-column label{
+main.product .right-column label{
   font-weight: 400;
   line-height: 15.6px;
   letter-spacing: -.9px;
   width: 60%;
 }
-.right-column select{
+main.product .right-column select{
   width: 25%;
   float: right;
   border: 1px solid var(--black);
@@ -535,10 +532,153 @@ p.alert-negative, p.alert-out{
 }
 
 
+/* PAGE DETAILS*/
+main.p-details{
+  position: relative;
+  overflow: hidden;
+}
+main.p-details::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 1);
+}
+main.p-details .container{
+  display: flex;
+}
+.personal-info, .summary-product{
+  width: 50%;
+}
+.personal-info{
+  padding-right: 125px;
+  padding-bottom: 110px;
+}
+.personal-info > div{
+  margin: 20px 0;
+}
+.steps{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.6px;
+  letter-spacing: -.9px;
+  color: rgba(97, 97, 97, 1);
+  margin-bottom: 40px;
+}
+.steps li:first-child{
+  color: var(--green);
+}
+.steps li.active{
+color: var(--black);
+}
+main.p-details .contact div{
+  display: flex;
+  justify-content: space-between;
+}
+main.p-details .contact div h2, .shipping-address h2{
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -.9px;
+}
+main.p-details .contact div p, main.p-details .contact div a{
+  font-size: 14px;
+  line-height: 26px;
+}
+main.p-details .contact div a{
+  color: var(--green);
+}
+main.p-details .contact input[type=checkbox], main.p-details input[type=checkbox]  {
+  width: 16px;
+  height: 16px;
+  display: inline;
+  margin-right: 7px;
+}
+main.p-details form label{
+  font-size: 14px;
+  line-height: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  vertical-align: text-top;
+}
+.shipping-address{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shipping-address h2{
+  margin-top: 40px;
+  width: 100%;
+}
 
+main.p-details form input, main.p-details form select{
+  border: .5px solid rgba(137, 137, 137, 1);
+  padding: 7px 17px;
+  font-size: 14px;
+  line-height: 25.6px;
+  margin-top: 12px;
+}
+input#name, input#surname{
+  width: 49%;
+}
+input#city, input#postal-code{
+  width: 32%;
+}
+select#province, select#country{
+  padding-top: 15px;
+}
+.shipping-address .box-province{
+  position: relative;
+  width: 32%;
+}
+.shipping-address .box-country{
+  position: relative ;
+  width: 100%;
+} 
+.shipping-address .box-province span{
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 11.5px;
+  color: #818181;
+}
+.shipping-address .box-country span{
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 11.5px;
+  color: #818181;
+}
+.footer-datails{
+  display: flex;
+  margin-top: 60px;
+}
+.footer-datails p, .footer-datails input[type=submit]{
+  width: 50%;
+}
+.footer-datails p{
+  display: flex;
+  align-items: center;
+}
+.footer-datails p a{
+  color: var(--green);
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25.6px;
+  letter-spacing: -.9px;
 
-
-
+}
 /* MEDIA QUERIES */
 
 
