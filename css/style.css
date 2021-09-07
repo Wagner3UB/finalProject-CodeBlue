@@ -432,7 +432,7 @@ main.product figure img:hover{
   height: 16px;
   margin-right: 20px;
 }
-main.product figcaption, main.product figure h3{
+main.product figcaption, main.product figure h3, main.product p.mobile_only, main.product h3.mobile_only{
   font-size: 20px;
   line-height: 25.6px;
   letter-spacing: -.9px;
@@ -452,12 +452,19 @@ main.product figure h3{
 .left-column .counter{
   display: flex;
   justify-content: space-evenly;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.6px;
+  letter-spacing: -.9px;
   height: 30px;
   border: 1px solid var(--green);
 }
 .left-column .counter p:first-child, .left-column .counter p:last-child{
   color: var(--green);
   cursor: pointer;
+}
+.left-column .counter p:nth-of-type(2){
+  font-size: ;
 }
 p.alert-negative, p.alert-out{
   display:none;
