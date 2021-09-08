@@ -29,13 +29,14 @@
             <li>></li>
             <li>Payment</li>
           </ul>
-          <form action="" method="post">
+          <div id="alert"></div>
+          <form action="" method="post" class="form-details">
             <section class="contact">
               <div>
                 <h2>Contact</h2>
                 <p>So you have an account? <a href="">Login</a></p>
               </div>
-              <input type="text" placeholder="Email or mobile phone number">
+              <input type="text" placeholder="Email or mobile phone number" name="contact" id="contact">
               <input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Add me to Candleaf newsletter for a 10% discount</label>
             </section>
             <section class="shipping-address">
@@ -45,11 +46,11 @@
               <input type="text" placeholder="Address and number" name="address" id="address" required>
               <input type="text" placeholder="Shipping note (optional)">
               <input type="text" placeholder="City" name="city" id="city">
-              <input type="number" placeholder="Postal Code" name="postal-code" id="postal-code">
+              <input type="text" placeholder="Postal Code" name="postalCode" id="postalCode">
               <div class="box-province">
                 <span>Province</span>
                 <select name="province" id="province">
-                  <option>Province</option>
+                  <option value>Province</option>
                   <option value="1">Province 1</option>
                   <option value="2">Province 2</option>
                   <option value="3">Province 3</option>
@@ -61,6 +62,7 @@
               <div class="box-country">
                 <span>Country/Region</span>
                 <select name="country" id="country">
+                  <option value></option>
                   <option value="it">Italy</option>
                   <option value="pt">Portugal</option>
                   <option value="br">Brazil</option>
@@ -77,11 +79,11 @@
               <p><a href="/cart.html">Back to cart</a></p>
               <input type="submit" value="Go to shipping" class="btn">
             </section>
-          </form>          
+          </form>
         </main>
 
       </article>
-      <article class="summay-product">
+      <article class="summary-product">
 
       </article>
       

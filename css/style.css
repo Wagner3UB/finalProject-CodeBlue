@@ -625,7 +625,7 @@ main.p-details form input, main.p-details form select{
 input#name, input#surname{
   width: 49%;
 }
-input#city, input#postal-code{
+input#city, input#postalCode{
   width: 32%;
 }
 select#province, select#country{
@@ -677,7 +677,54 @@ select#province, select#country{
   font-size: 18px;
   line-height: 25.6px;
   letter-spacing: -.9px;
-
+}
+/* Form validation */
+.contact, .shipping-address{
+  position: relative;
+}
+main.p-details form label.error{
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #d00;
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+#contact-error{
+  top: 62px;
+  left: 18px;
+}
+#name-error{
+  top: 102px;
+  left: 18px;
+}
+#surname-error{
+  top: 102px;
+  left: 238px;
+}
+#address-error{
+  top: 154px;
+  left: 18px;
+}
+#city-error{
+  top: 260px;
+  left: 5px;
+}
+#postalCode-error{
+  top: 260px;
+  left: 149px;
+}
+#province-error{
+  top: 37px;
+  left: 5px;
+  letter-spacing: -.7px;
+}
+#country-error{
+  top: 37px;
+  left: 5px;
+  letter-spacing: -.7px;
 }
 /* MEDIA QUERIES */
 
