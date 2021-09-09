@@ -115,6 +115,16 @@ $(function(){
       }
     }
   });
+
+  $(".couponForm").validate({
+    rules: {
+      coupon: {
+        minlength: 10,
+        maxlength: 10,
+        number: true
+      }
+    }
+  })
 });
 
 

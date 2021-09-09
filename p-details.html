@@ -41,54 +41,82 @@
             </section>
             <section class="shipping-address">
               <h2>Shipping Address</h2>
-              <input type="text" placeholder="Name" name="name" id="name" required>
-              <input type="text" placeholder="Second Name" name="surname" id="surname" required>
-              <input type="text" placeholder="Address and number" name="address" id="address" required>
-              <input type="text" placeholder="Shipping note (optional)">
-              <input type="text" placeholder="City" name="city" id="city">
-              <input type="text" placeholder="Postal Code" name="postalCode" id="postalCode">
-              <div class="box-province">
-                <span>Province</span>
-                <select name="province" id="province">
-                  <option value>Province</option>
-                  <option value="1">Province 1</option>
-                  <option value="2">Province 2</option>
-                  <option value="3">Province 3</option>
-                  <option value="4">Province 4</option>
-                  <option value="5">Province 5</option>
-                  <option value="6">Province 6</option>
-                </select>
-              </div>
-              <div class="box-country">
-                <span>Country/Region</span>
-                <select name="country" id="country">
-                  <option value></option>
-                  <option value="it">Italy</option>
-                  <option value="pt">Portugal</option>
-                  <option value="br">Brazil</option>
-                  <option value="uk">United Kingdom</option>
-                  <option value="fr">France</option>
-                  <option value="es">Spain</option>
-                  <option value="ch">China</option>
-                  <option value="jp">Japan</option>
-                </select>
-              </div>
+              <ul>
+                <li class="input-medium"><input type="text" placeholder="Name" name="name" id="name" required></li>
+                <li class="input-medium"><input type="text" placeholder="Second Name" name="surname" id="surname" required></li>
+                <li class="input-full"><input type="text" placeholder="Address and number" name="address" id="address" required></li>
+                <li class="input-full"><input type="text" placeholder="Shipping note (optional)"></li>
+                <li class="input-small"><input type="text" placeholder="City" name="city" id="city"></li>
+                <li class="input-small"><input type="text" placeholder="Postal Code" name="postalCode" id="postalCode"></li>
+                <li class="box-province">
+                  <span>Province</span>
+                  <select name="province" id="province">
+                    <option value>Province</option>
+                    <option value="1">Province 1</option>
+                    <option value="2">Province 2</option>
+                    <option value="3">Province 3</option>
+                    <option value="4">Province 4</option>
+                    <option value="5">Province 5</option>
+                    <option value="6">Province 6</option>
+                  </select>
+                </li>
+                <li class="box-country">                
+                  <span>Country/Region</span>
+                  <select name="country" id="country">
+                    <option value></option>
+                    <option value="it">Italy</option>
+                    <option value="pt">Portugal</option>
+                    <option value="br">Brazil</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="fr">France</option>
+                    <option value="es">Spain</option>
+                    <option value="ch">China</option>
+                    <option value="jp">Japan</option>
+                  </select>
+                </li>
+              </ul>
             </section>
             <input type="checkbox" name="save-info" id="save-info"><label for="save-info">Save this informations for a future fast checkout</label>
-            <section class="footer-datails">
+            <section class="footer-details">
               <p><a href="/cart.html">Back to cart</a></p>
               <input type="submit" value="Go to shipping" class="btn">
             </section>
           </form>
         </main>
-
       </article>
       <article class="summary-product">
+        <article class="row-1">
+          <figure>
+            <img src="img/img-details-product1.png" alt="Spiced Mint Candleaf">
+          </figure>
+          <div>
+            <h2>Spiced Mint Candleaf®</h2>
+            <h3>$ 9.99</h3>
+          </div>
+        </article>
+        <form action="" class="couponForm">
+          <div>
+            <input type="text" name="coupon" id="coupon" placeholder="Coupon code">
+          </div>
+          <input type="submit" value="Add code" class="btn-coupon">
+        </form>
+        <article class="row-3">
+          <section>
+            <p>Subtotal</p>
+            <p>$ 9.99</p>
+            <p>Shipping</p>
+            <p>Calculated at the next step</p>
+          </section>
+          <section>
+            <p>Total</p>
+            <h2>$ 9.99</h2>
+          </section>
+
+        </article>
+
 
       </article>
-      
     </article>
-
   </main>
   <script  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
