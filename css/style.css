@@ -449,7 +449,7 @@ main.product figure h3{
 .left-column .quantity{
   width: 75px;
 }
-.left-column .counter{
+.counter{
   display: flex;
   justify-content: space-evenly;
   font-size: 18px;
@@ -459,7 +459,7 @@ main.product figure h3{
   height: 30px;
   border: 1px solid var(--green);
 }
-.left-column .counter p:first-child, .left-column .counter p:last-child{
+.counter p:first-child, .counter p:last-child{
   color: var(--green);
   cursor: pointer;
 }
@@ -808,9 +808,54 @@ main.p-details form label.error{
   100%{left: 0;}
 }
 
+/* CART */
+main.cart .top{
+  margin-top: 77px;
+  padding: 60px 0;
+}
+main.cart .top h2{
+  font-size: 26px;
+  line-height: 57.6px;
+  letter-spacing: -.9px;
+  text-align: center;
+}
+main.cart .top a{
+  display: block;
+  width: 100%;
+  color: var(--green);
+  font-size: 18px;
+  line-height: 25.6px;
+  letter-spacing: -.9px;
+  text-decoration: underline;
+  text-align: center;
+}
+.cart-display .row-1{
+  display: flex;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 15px 0;
+}
+.cart-display .row-1 h2{
+  width: 50%;
+  font-family: "Roboto", Helvetica,  Arial, sans-serif;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: -.9px;
+}
+.cart-display .row-1 h3{
+  width: 16.6%;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: -.9px;
+}
+.cart-display .row-1 h3:last-child{
+  text-align: right;
+}
 
 
+
+/*****************/
 /* MEDIA QUERIES */
+/*****************/
 
 @media screen and (max-width: 376px){
   .mobile_only{
