@@ -45,6 +45,12 @@ $(function(){
     $(this).addClass("active");
   });
 
+  /*Mobile accordeon details*/
+  $(".box-details-mobile").on("click", function(){
+    $(".summary-product.mobile_only").toggle();
+    $(".box-details-mobile h2 span").toggleClass("active");
+  })
+
   /* FORM p-details validations*/
 
   $(".form-details").validate({
@@ -119,6 +125,16 @@ $(function(){
   $(".couponForm").validate({
     rules: {
       coupon: {
+        minlength: 10,
+        maxlength: 10,
+        number: true
+      }
+    }
+  });
+  
+  $(".couponFormMobile").validate({
+    rules: {
+      couponMobile: {
         minlength: 10,
         maxlength: 10,
         number: true

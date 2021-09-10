@@ -19,7 +19,12 @@
         <div>
           <h1><a href="/"><img src="img/logo.png" alt="Brand Logo"></a></h1>
         </div>
-        <main>
+        <main>          
+          <div class="box-details-mobile">
+            <span class="material-icons-outlined">shopping_cart</span>
+            <h2>See your order details <span>></span></h2>
+            <p>$ 9.99</p>
+          </div>
           <ul class="steps">
             <li>Cart</li>
             <li>></li>
@@ -29,7 +34,35 @@
             <li>></li>
             <li>Payment</li>
           </ul>
-          <div id="alert"></div>
+          <article class="summary-product mobile_only">
+            <article class="row-1 animation-details-products">
+              <figure>
+                <img src="img/img-details-product1.png" alt="Spiced Mint Candleaf">
+              </figure>
+              <div>
+                <h2>Spiced Mint Candleaf®</h2>
+                <h3>$ 9.99</h3>
+              </div>
+            </article>
+            <form action="" class="couponFormMobile animation-details-products" >
+              <div>
+                <input type="text" name="couponMobile" id="couponMobile" placeholder="Coupon code">
+              </div>
+              <input type="submit" value="Add code" class="btn-coupon-mobile">
+            </form>
+            <article class="row-3 animation-details-products">
+              <section>
+                <p>Subtotal</p>
+                <p>$ 9.99</p>
+                <p>Shipping</p>
+                <p>Calculated at the next step</p>
+              </section>
+              <section>
+                <p>Total</p>
+                <h2>$ 9.99</h2>
+              </section>
+            </article>
+          </article>
           <form action="" method="post" class="form-details">
             <section class="contact">
               <div>
@@ -84,7 +117,7 @@
           </form>
         </main>
       </article>
-      <article class="summary-product">
+      <article class="summary-product desktop">
         <article class="row-1">
           <figure>
             <img src="img/img-details-product1.png" alt="Spiced Mint Candleaf">
