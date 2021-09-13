@@ -1234,4 +1234,53 @@ main.cart .top a{
     margin-top: 20px;
   }
 
+  /* CART */
+  .row-1 h3:not(:nth-of-type(1)), .row-2 > p:last-child{
+    display: none;
+  }
+  .cart-display .row-1 h3{
+    width: 50%;
+    text-align: right;
+  }
+  .cart-display .row-2{
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: start;
+  }
+  .row-2 figure{
+    width: 70%;
+    flex-wrap: nowrap;
+  }
+  .row-2 figure img{
+    width: 50%;
+    height: 70px;
+  }
+  .row-2 figure h2{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .row-2 > p{
+    width: 30%;
+    text-align: right;
+  }
+  .row-2 > div{
+    width: auto;
+    margin-top: -25px;
+  }
+  .row-2 div .mobile-only{
+    width: 100%;
+    text-align: center;
+  }
+  .cart-display .row-3{
+    flex-direction: column;
+  }
+  .row-3 section{
+    margin: 45px 0 36px
+  }
+  .row-3 div{
+    justify-content: unset;
+  }
+  .row-3 a{
+    margin: 0 0 50px;
+  }
 }
