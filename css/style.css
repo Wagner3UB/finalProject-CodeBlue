@@ -953,7 +953,7 @@ main.cart .top a{
 /* MEDIA QUERIES */
 /*****************/
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 680px){
   .mobile_only{
     display: block;
   }
@@ -996,10 +996,9 @@ main.cart .top a{
     bottom: -30px;
     left: -15px;
     opacity: 0;
-    width: 375px;
+    width: 100vw;
     background-color: var(--white);
     padding-left: 63px;
-    z-index: 1;
   }
   nav li:first-child a::before{
     left: -25px;
@@ -1076,6 +1075,7 @@ main.cart .top a{
   }
   .learn-more h2{
     text-align: center;
+    margin: auto;
   }
   .learn-more h4{
     text-align: center;
