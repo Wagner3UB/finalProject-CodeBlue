@@ -505,14 +505,16 @@ main.product .right-column select{
   float: right;
   border: 1px solid var(--black);
 }
-.add-to-cart button{
+.add-to-cart > a{
+  display: block;
   width: 350px;
   margin-top: 67px;
   margin-left: 190px;
   font-size: 20px;
   line-height: 23px;
+  text-align: center;
 }
-.add-to-cart button span{
+.add-to-cart a span{
   font-size: 20px;
   line-height: 23px;
 }
@@ -530,6 +532,50 @@ main.product .right-column select{
 .add-to-cart .product-description span{
   color: #1D252C;
 }
+/*POPUP*/
+.popup{
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #272727c2;
+  justify-content: center;
+  align-items: center;
+  animation: popup .5s ease;
+}
+@keyframes popup {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.popup span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.popup article{
+  position: relative;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--white);
+}
+.popup span{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--green);
+}
+.popup figure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
 
 
 /* PAGE DETAILS*/
@@ -1131,6 +1177,9 @@ main.cart .top a{
   }
 
   /* PÁGINA PRODUTO*/
+  .popup article{
+    flex-wrap: wrap;
+  }
   .p-details h1{
     text-align: center;
   }
@@ -1156,7 +1205,7 @@ main.cart .top a{
   .left-column h3{
     width: 50%;
   }
-  .add-to-cart button{
+  .add-to-cart > a{
     width: 100%;
     margin-top: 67px;
     margin-left: unset;

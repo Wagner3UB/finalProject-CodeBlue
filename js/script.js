@@ -7,6 +7,14 @@ $(function(){
     $(".see_more").addClass("active");
   });
 
+  /*POPUP*/
+  $(".pop-open").on("click", function(){
+    $(".popup").css("display", "flex");
+  });
+  $(".pop-close").on("click", function(){
+    $(".popup").css("display", "none");
+  })
+
   //Counter
   let quantity = $(".counter p:nth-of-type(2)");
   
